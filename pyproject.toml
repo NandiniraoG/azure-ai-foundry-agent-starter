@@ -1,0 +1,17 @@
+[project]
+name = "azure-ai-foundry-agent-starter"
+version = "0.1.0"
+description = "Azure AI Foundry-style agent starter with responsible AI checks."
+requires-python = ">=3.10"
+dependencies = [
+    "python-dotenv>=1.0.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
